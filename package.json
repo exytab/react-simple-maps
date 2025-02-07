@@ -1,7 +1,8 @@
 {
-  "name": "react-simple-maps",
+  "name": "@exytab/react-simple-maps",
   "version": "3.0.0",
   "description": "An svg map chart component built with and for React",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.umd.js",
@@ -12,11 +13,11 @@
     "build": "rollup -c",
     "watch": "rollup -cw",
     "prepare": "rollup -c",
-    "test": "mocha './tests/**/*.spec.js' --compilers js:@babel/register"
+    "test": "mocha './tests/**/*.spec.js' --require @babel/register"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zcreativelabs/react-simple-maps.git"
+    "url": "git+https://github.com/exytab/react-simple-maps.git"
   },
   "keywords": [
     "react",
@@ -29,35 +30,34 @@
   "author": "Richard Zimerman <richard@zcreativelabs.com> (https://github.com/zimrick)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zcreativelabs/react-simple-maps/issues"
+    "url": "https://github.com/exytab/react-simple-maps/issues"
   },
-  "homepage": "https://github.com/zcreativelabs/react-simple-maps#readme",
+  "homepage": "https://github.com/exytab/react-simple-maps#readme",
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/plugin-external-helpers": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.18.6",
-    "@babel/plugin-transform-react-jsx": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
-    "@babel/register": "^7.18.6",
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-commonjs": "^22.0.1",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "expect": "^23.5.0",
-    "mocha": "^5.2.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "rollup": "^2.75.7",
-    "rollup-plugin-terser": "^7.0.2"
+    "@babel/core": "^7.26.7",
+    "@babel/plugin-external-helpers": "^7.25.9",
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
+    "@babel/preset-env": "^7.26.7",
+    "@babel/register": "^7.25.9",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "expect": "^29.7.0",
+    "mocha": "^11.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup": "^4.34.6"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.0 || 17.x || 18.x",
-    "react-dom": "^16.8.0 || 17.x || 18.x"
+    "react": "^16.8.0 || 17.x || 18.x || 19.x",
+    "react-dom": "^16.8.0 || 17.x || 18.x || 19.x"
   },
   "dependencies": {
     "d3-color": "^3.1.0",
-    "d3-geo": "^3.1.0",
+    "d3-geo": "^3.1.1",
     "d3-interpolate": "^3.0.1",
     "d3-selection": "^3.0.0",
     "d3-zoom": "^3.0.0",
